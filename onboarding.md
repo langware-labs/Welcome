@@ -8,7 +8,8 @@ Your first assignment involves acquiring the code for a counter app directly fro
 
 ## Task 2: Code to Count Langware's Tokens
 
-As part of your integration, you are tasked with developing a script that counts all of Langware's tokens. Our data is dispersed across a variety of platforms, including GitHub, Jira, Miro, Notion, and Slack, among others. Your script should be capable of navigating these platforms to perform an accurate count. It's crucial to save this code as it will be a valuable tool for future tasks and analyses.
+As part of your integration, you are tasked with developing a script that counts all of Langware's code tokens. You should get both our backend code and frontend code, seprately.
+Frontent is in /ui, backend is all the rest.
 
 ## Task 3: Automate Source Code Documentation
 
