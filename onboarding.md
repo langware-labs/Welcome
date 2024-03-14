@@ -1,78 +1,19 @@
-# FOR TESTING
+# First Tasks
 
-------
+Welcome to the team! We're thrilled to have you on board and excited to guide you through the initial steps to get you up and running. This manual is designed to streamline your onboarding process, so please follow the outlined steps carefully.
 
-# Onboarding Manual for New Team Members
+## Task 1: Obtain Counter App Code
 
-Welcome to the team! This manual will guide you through the initial setup process to get you up and running. Please follow the steps outlined below.
+Your first assignment involves acquiring the code for a counter app directly from our chatbot. This task is your gateway to understanding the foundational elements of our project's ecosystem. Engage with our chatbot, request the counter app code, and familiarize yourself with our automated systems.
 
-## 1. Install Neo4j as a Database
+## Task 2: Code to Count Langware's Tokens
 
-To install Neo4j, follow the official installation guide for your operating system on the [Neo4j Download Page](https://neo4j.com/download/).
+As part of your integration, you are tasked with developing a script that counts all of Langware's tokens. Our data is dispersed across a variety of platforms, including GitHub, Jira, Miro, Notion, and Slack, among others. Your script should be capable of navigating these platforms to perform an accurate count. It's crucial to save this code as it will be a valuable tool for future tasks and analyses.
 
-## 2. Test the Connectivity to the Database
+## Task 3: Automate Source Code Documentation
 
-After installing Neo4j, ensure that you can connect to your database. You can do this by opening Neo4j Browser and connecting to the database URL, usually `bolt://localhost:7687`. If you're using a Neo4j Desktop, you can test the connection through the application interface.
-
-## 3. Setup Environment
-
-Ensure your development environment is prepared for the project:
-
-- Install Java JDK if required by Neo4j.
-- Ensure Python is installed for back-end services.
-- Ensure Node.js is installed for front-end services.
-
-## 4. Pip Install from requirements.txt
-
-Navigate to your project directory and run the following command to install Python dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-## 5. Run the Test Suites
-
-To ensure everything is set up correctly, run the test suites for your project:
-
-```bash
-python -m unittest discover
-```
-
-## 6. Install Node.js
-
-If you haven't already, install Node.js. You can download it from the [official Node.js website](https://nodejs.org/).
-
-## 7. Change Directory to UI Folder and Run npm Install
-
-Navigate to the UI project folder and install the necessary npm packages:
-
-```bash
-cd ui
-npm install
-```
-
-## 8. Run the Test of UI
-
-To run the UI tests, execute:
-
-```bash
-npm test
-```
-
-## 9. Start Local App
-
-To start the application locally, you may need to start both the backend and the frontend services. For the frontend, you can typically start it with:
-
-```bash
-npm start
-```
-
-For the backend, the command depends on your setup, but it might look something like this:
-
-```bash
-python app.py
-```
+The culmination of your onboarding tasks is to establish an automated system for documenting our source code. This initiative is vital for the maintenance of our codebase's clarity and the ease of onboarding future team members. 
 
 ---
 
-If you encounter any issues, please reach out to your team lead for assistance. Welcome aboard, and happy coding!
+This manual is not just a set of tasks but a journey into our collaborative environment. Each task is designed to enhance your understanding of our operations and prepare you for the exciting work ahead. Should you face any difficulties, we are always ready to assist. Welcome aboard, and happy coding!
