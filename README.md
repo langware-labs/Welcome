@@ -186,35 +186,100 @@ to write any code.
 
 # FlowPad Installation Guide
 
-FlowPad is an innovative tool designed to streamline your workflow. Follow the steps below to install and start using FlowPad.
+FlowPad is an innovative tool designed to streamline your workflow. Follow the steps below to install and start using
+FlowPad.
 
 ## Prerequisites
 
 Before installing FlowPad, ensure you have the following prerequisites met:
-- Python installed on your system (Python 3.10 or newer is recommended).
+
+- Python installed on your system (Python 3.6 or newer is recommended).
 - `pip` for installing Python packages.
 - Git, for cloning repositories from GitHub.
+
+## Environment Configuration
+
+Before running FlowPad, you must configure the following environment variables:
+
+Note: Use your `OPENAI_API_KEY` If you don't have an OpenAI API key, you can get one [here](https://1password.com/).
+
+<details>
+<summary>For Windows</summary>
+<ul>
+<details>
+<summary>Windows Command Prompt</summary>
+
+```cmd
+set NEO4J_DATABASE_USERNAME=<YOUR_NEO4J_DATABASE_USERNAME>
+set NEO4J_DATABASE_PASS=<YOUR_NEO4J_DATABASE_PASS>
+set NEO4J_DATABASE_DB_NAME=neo4j
+set NEO4J_DATABASE_HOST=localhost
+set NEO4J_DATABASE_PORT=7687
+set OPENAI_API_KEY=<YOUR_OPEN_API_KEY>
+```
+
+</details>
+
+<details>
+<summary>Windows PowerShell</summary>
+
+```powershell
+$env:NEO4J_DATABASE_USERNAME=<YOUR_NEO4J_DATABASE_USERNAME>
+$env:NEO4J_DATABASE_PASS=<YOUR_NEO4J_DATABASE_PASS>
+$env:NEO4J_DATABASE_DB_NAME=neo4j
+$env:NEO4J_DATABASE_HOST=localhost
+$env:NEO4J_DATABASE_PORT=7687
+$env:OPENAI_API_KEY=<YOUR_OPEN_API_KEY>
+```
+
+</details>
+</ul>
+
+</details>
+
+<details>
+<summary>For macOS and Linux</summary>
+
+```bash
+export NEO4J_DATABASE_USERNAME=<YOUR_NEO4J_DATABASE_USERNAME>
+export NEO4J_DATABASE_PASS=<YOUR_NEO4J_DATABASE_PASS>
+export NEO4J_DATABASE_DB_NAME=neo4j
+export NEO4J_DATABASE_HOST=localhost
+export NEO4J_DATABASE_PORT=7687
+export OPENAI_API_KEY=<YOUR_OPEN_API_KEY>
+```
+
+</details>
 
 ## Installation Steps
 
 1. **Install FlowPad**:
 
-   Open a terminal or command prompt and execute the following command to install FlowPad directly from its GitHub repository:
+   Open a terminal or command prompt and execute the following command to install FlowPad directly from its GitHub
+   repository:
 
    ```bash
-   pip install git+https://github.com/langware-labs/flowpad.git#egg=flowpad     
+   pip install git+https://github.com/flowpad.git#egg=flowpad    
    ```
 
-   This command uses pip to install FlowPad using the Git protocol. It clones the repository and installs it as a package in your Python environment.
+   This command uses `pip` to install FlowPad using the Git protocol. It clones the repository and installs it as a
+   package in your Python environment.
 
 2. **Start FlowPad**:
 
-   After the installation completes, you can start FlowPad by running:
+   After the installation completes and the environment variables are set, you can start FlowPad by running:
 
    ```bash
    flowpad start
    ```
 
-   This command initializes FlowPad and opens its user interface, allowing you to begin organizing your projects and tasks immediately.
+   This command initializes FlowPad and opens its user interface, allowing you to begin organizing your projects and
+   tasks immediately.
+
+## Post-Installation
+
+After starting FlowPad, you can access its features through the user interface. Explore the documentation and tutorials
+available on the FlowPad website to get the most out of your new workflow tool.
 
 </details>
+

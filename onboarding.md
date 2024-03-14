@@ -1,3 +1,87 @@
+# Setup development environment
+## Prerequisites
+
+### 1. Python
+
+Python and pip installed on your system (Python 3.10 or newer is recommended).
+**NOTE: run the command below to check if python is installed on your system.**
+
+```bash
+python --version
+```
+
+### 2. Git
+
+If you haven't already, install Git. Git is required for cloning repositories and version control. Visit the [official Git website](https://git-scm.com/downloads) to download and install Git for Windows or macOS.
+**NOTE: run the command below to check if git is installed on your system.**
+
+```bash
+git --version
+```
+
+### 3. Node and NPM
+Node.js installed on your system.** You can download it from the [official Node.js website](https://nodejs.org/). Installing Node.js is crucial for FlowPad to run correctly.
+
+**NOTE: run the command below to check if Node.js is installed on your system.**
+
+```bash
+node --version
+```
+
+### 4. Clone Flowpad Repository
+
+```bash
+git clone https://github.com/langware-labs/FlowPad.git
+```
+
+### 5. Install Dependencies
+
+Install the necessary packages from the requirements.txt file:
+
+```bash
+pip install -r requirements.txt
+```
+
+Navigate to the UI project folder and install the necessary npm packages:
+
+```bash
+cd flowpad/ui
+npm install
+cd -
+```
+
+### 6. Run Tests
+
+To run the backend tests, execute:
+
+```bash
+python -m unittest flowpad/hub/tests/api/test_suite.py
+python -m unittest flowpad/hub/tests/units/test_suite.py
+```
+
+To run the UI tests, execute:
+
+```bash
+cd flowpad/ui
+npm test
+```
+
+### 7. Start Local App
+
+To start the application locally, you may need to start both the backend and the frontend services. For the frontend, you can typically start it with:
+
+```bash
+npm run build
+npm run dev
+```
+
+For the backend, the command depends on your setup, but it might look something like this:
+
+```bash
+python python flowpad/app.py
+```
+
+
 # First Tasks
 
 Welcome to the team! We're thrilled to have you on board and excited to guide you through the initial steps to get you up and running. This manual is designed to streamline your onboarding process, so please follow the outlined steps carefully.
