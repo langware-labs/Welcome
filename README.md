@@ -177,21 +177,21 @@ to write any code.
 
 </details>
 
+
 ---
+
 
 <details>
 <summary>Install FlowPad</summary>
 
 # FlowPad Installation Guide
 
-FlowPad is an innovative tool designed to streamline your workflow. Follow the steps below to install and start using
-FlowPad.
+FlowPad is an innovative tool designed to streamline your workflow. Follow the steps below to install and start using FlowPad.
 
 ## Prerequisites
 
 Before installing FlowPad, ensure you have the following prerequisites met:
-
-- Python installed on your system (Python 3.6 or newer is recommended).
+- Python installed on your system (Python 3.10 or newer is recommended).
 - `pip` for installing Python packages.
 - Git, for cloning repositories from GitHub.
 
@@ -199,26 +199,22 @@ Before installing FlowPad, ensure you have the following prerequisites met:
 
 1. **Install FlowPad**:
 
-   Open a terminal or command prompt and execute the following command to install FlowPad directly from its GitHub
-   repository:
+   Open a terminal or command prompt and execute the following command to install FlowPad directly from its GitHub repository:
 
    ```bash
-   pip install git+https://github.com/langware-labs/flowpad.git#egg=flowpad    
-    ```
+   pip install git+https://github.com/langware-labs/flowpad.git#egg=flowpad     
+   ```
 
-<details>
-<summary>Install FlowPad</summary>
+   This command uses pip to install FlowPad using the Git protocol. It clones the repository and installs it as a package in your Python environment.
 
-# FlowPad
+2. **Start FlowPad**:
 
-```bash
-pip install git+https://github.com/langware-labs/flowpad.git#egg=flowpad    
+   After the installation completes, you can start FlowPad by running:
 
-flowpad start
+   ```bash
+   flowpad start
+   ```
 
-```
+   This command initializes FlowPad and opens its user interface, allowing you to begin organizing your projects and tasks immediately.
 
 </details>
-
----
-
