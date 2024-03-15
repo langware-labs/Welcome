@@ -60,7 +60,13 @@ node --version
 git clone https://github.com/langware-labs/FlowPad.git
 ```
 
-### 5. Install Dependencies
+### 5. Change directory to the Flowpad folder
+
+```bash
+cd FlowPad
+```
+
+### 6. Install Dependencies
 
 Install the necessary packages from the requirements.txt file:
 
@@ -76,7 +82,7 @@ npm install
 cd -
 ```
 
-### 6. Run Tests
+### 7. Run Tests
 
 To run the backend tests, execute:
 
@@ -92,7 +98,7 @@ cd flowpad/ui
 npm test
 ```
 
-### 7. Start Local App
+### 8. Start Local App
 
 To start the application locally, you may need to start both the backend and the frontend services. For the frontend,
 you can typically start it with:
