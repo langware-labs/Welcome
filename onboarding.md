@@ -62,10 +62,11 @@ node --version
 git clone https://github.com/langware-labs/FlowPad.git
 ```
 
-### 5. Change directory to the Flowpad folder
+### 5. Change directory to the Flowpad folder and list the contents
 
 ```bash
 cd FlowPad
+ls -la
 ```
 
 ### 6. Install Dependencies
@@ -117,7 +118,7 @@ For the backend, the command depends on your setup, but it might look something 
 
 ```bash
 cd Flowpad
-python python flowpad/app.py
+python flowpad/app.py
 ```
 
 # First Tasks
