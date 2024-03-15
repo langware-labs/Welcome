@@ -73,13 +73,14 @@ cd FlowPad
 Install the necessary packages from the requirements.txt file:
 
 ```bash
+cd FlowPad
 pip install -r requirements.txt
 ```
 
 Navigate to the UI project folder and install the necessary npm packages:
 
 ```bash
-cd flowpad/ui
+cd Flowpad/flowpad/ui
 npm install
 cd -
 ```
@@ -89,6 +90,7 @@ cd -
 To run the backend tests, execute:
 
 ```bash
+cd FlowPad
 python -m unittest flowpad/hub/tests/api/test_suite.py
 python -m unittest flowpad/hub/tests/units/test_suite.py
 ```
@@ -96,7 +98,7 @@ python -m unittest flowpad/hub/tests/units/test_suite.py
 To run the UI tests, execute:
 
 ```bash
-cd flowpad/ui
+cd Flowpad/flowpad/ui
 npm test
 ```
 
@@ -106,6 +108,7 @@ To start the application locally, you may need to start both the backend and the
 you can typically start it with:
 
 ```bash
+cd Flowpad/flowpad/ui
 npm run build
 npm run dev
 ```
@@ -113,6 +116,7 @@ npm run dev
 For the backend, the command depends on your setup, but it might look something like this:
 
 ```bash
+cd Flowpad
 python python flowpad/app.py
 ```
 
