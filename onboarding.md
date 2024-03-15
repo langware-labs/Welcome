@@ -24,6 +24,8 @@ components necessary for integration. simply copy the URLs provided and use them
 your Flowpad environment. This process will integrate the code snippet and shell script functionalities into your
 workspace, enhancing your development capabilities with Flowpad.
 
+Please mark the checkbox for each section after you have successfully completed it.
+
 ### 1. Python
 
 Python and pip installed on your system (Python 3.10 or newer is recommended).
