@@ -1,34 +1,32 @@
-# Setup development environment
+# Welcome to Flowpad!
 
-To add the required extensions for using Flowpad, you'll need to incorporate specific configuration details from the
-provided JSON files. These configurations pertain to code snippets and shell script components, enabling enhanced
-functionality in your Flowpad environment.
+🚀 **Embark on your Flowpad journey!** Flowpad is here to navigate you through the setup process, ensuring you have everything you need to get started. Once set up, you'll dive into your first tasks, equipped with guidance, executable code snippets, and scripts—all at your fingertips. Engage with our chatbot in each section for interactive learning and instant code solutions.
 
-For detailed JSON configurations and to implement these extensions directly into your Flowpad setup, please refer to the
-original sources:
+For a seamless experience, please tick the checkbox after completing each section. It's crucial to keep moving forward without backtracking for the smoothest user journey.
 
-- [Code Snippet Extension Configuration](https://raw.githubusercontent.com/langware-labs/components/main/code-snippet/src/extensionConfig.json)
+## Setup Your Development Environment
 
-```url
-https://raw.githubusercontent.com/langware-labs/components/main/code-snippet/src/extensionConfig.json
-```
+Let's kick things off by enhancing Flowpad with some powerful extensions! These tools are designed to supercharge Flowpad, offering you the ability to run code directly from the interface.
 
-- [Shell Script Extension Configuration](https://raw.githubusercontent.com/langware-labs/components/main/shell-script/src/extensionConfig.json)
+👉 Click the **Add Extension** button at the top of this page and introduce the URLs provided below—one at a time. These extensions are key to unlocking a more dynamic coding experience within Flowpad.
 
-```url
-https://raw.githubusercontent.com/langware-labs/components/main/shell-script/src/extensionConfig.json
-```
+### Extensions to Add:
 
-These URLs contain JSON data that defines the extensions, including their titles, descriptions, models, and view
-components necessary for integration. simply copy the URLs provided and use them in the "Add Extension" button within
-your Flowpad environment. This process will integrate the code snippet and shell script functionalities into your
-workspace, enhancing your development capabilities with Flowpad.
+- **Code Snippet Extension**: Allows you to execute code snippets seamlessly.
+  ```url
+  https://raw.githubusercontent.com/langware-labs/components/main/code-snippet/src/extensionConfig.json
+  ```
 
-Please mark the checkbox for each section after you have successfully completed it.
+- **Shell Script Extension**: Enables the execution of shell scripts directly.
+  ```url
+  https://raw.githubusercontent.com/langware-labs/components/main/shell-script/src/extensionConfig.json
+  ```
+
+Dive in and let Flowpad transform your coding workflow into an adventure! 🌟
 
 # Choose you dev Folder
 
-***NOTE: This requirnent is mandatory. Please change the placeholder with your actual development folder path.***
+***NOTE: This requirement is mandatory. Please replace the placeholder with your actual development folder path.***
 
 - for example: replace <your_dev_folder_full_path> to /Users/username/development
 - where `username` is your actual username.
