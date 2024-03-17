@@ -103,18 +103,20 @@ When deploying the application, the following environment variables can be set:
 | `NEO4J_DATABASE_PORT`     | Your Neo4j database port.          | Yes      |
 | `CONNECTION_STR`          | Your PostgreSQL connection string. | Yes      |
 | `OPENAI_API_KEY`          | Your OpenAI API key.               | Yes      |
+| `DEVELOPMENT`             | `True` for dev.                    | Yes      |
 
 Ensure you replace the placeholders with your actual configuration values before running the project.
 Do not use special characters in DB_NAME.
+**DB_NAME should be anything BUT `neo4j`**. e.g. `local`
 
-### 6. Change directory to the Flowpad folder and list the contents and create a virtual environment
+~### 6. Change directory to the Flowpad folder and list the contents and create a virtual environment~
 
-```bash
-cd FlowPad
-python -m venv venv
-source venv/bin/activate
-ls -la
-```
+~```bash~
+~cd FlowPad~
+~python -m venv venv~
+~source venv/bin/activate~
+~ls -la~
+~```~
 
 ### 7. Install Dependencies
 
