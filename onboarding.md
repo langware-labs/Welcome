@@ -102,6 +102,7 @@ When deploying the application, the following environment variables can be set:
 | `OPENAI_API_KEY`          | Your OpenAI API key.               | Yes      |
 
 Ensure you replace the placeholders with your actual configuration values before running the project.
+Do not use special characters in DB_NAME.
 
 ### 6. Change directory to the Flowpad folder and list the contents and create a virtual environment
 
