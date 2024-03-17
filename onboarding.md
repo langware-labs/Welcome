@@ -10,7 +10,7 @@ Let's kick things off by enhancing Flowpad with some powerful extensions! These 
 
 👉 Click the **Add Extension** button at the top of this page and introduce the URLs provided below—one at a time. These extensions are key to unlocking a more dynamic coding experience within Flowpad.
 
-### Extensions to Add:
+** Extensions to Add:**
 
 - **Code Snippet Extension**: Allows you to execute code snippets seamlessly.
   ```url
