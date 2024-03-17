@@ -152,12 +152,16 @@ cd Flowpad/flowpad/ui
 npm test
 ```
 
+### Congrats. You have a working environment.
+
 ### 9. Start Local App
 
+We currently do not support opening dev environemt inside this environment.
+So, for now, open a terminal.
 To start the application locally, you may need to start both the backend and the frontend services. For the frontend,
 you can typically start it with:
 
-```bash
+```
 cd Flowpad/flowpad/ui
 npm run build
 npm run dev
@@ -165,9 +169,9 @@ npm run dev
 
 For the backend, the command depends on your setup, but it might look something like this:
 
-```bash
+```
 cd Flowpad
-python flowpad/app.py
+python -m flowpad.app
 ```
 
 # First Tasks
