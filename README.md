@@ -63,7 +63,7 @@ manager for macOS.
 #### Step 3: Verify Installation
 
 - To check if Python was successfully installed, type the following command and press Enter:
-  ```
+  ```bash
   python3 --version
   ```
 - If the installation was successful, you should see the Python version number.

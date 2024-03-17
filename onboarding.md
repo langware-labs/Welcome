@@ -79,7 +79,7 @@ git clone https://github.com/langware-labs/FlowPad.git
 In your terminal at the root of your local repository (cd into the cloned repository), run:
 
 ```bash
-cp FlowPad/flowpad/hub/.env.local.local.example FlowPad/flowpad/hub/.env.local.local
+cp FlowPad/flowpad/hub/.env.local.example FlowPad/flowpad/hub/.env.local
 ```
 
 Note: Use your `OPENAI_API_KEY` If you don't have an OpenAI API key, you can get
