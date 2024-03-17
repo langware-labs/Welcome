@@ -26,6 +26,18 @@ workspace, enhancing your development capabilities with Flowpad.
 
 Please mark the checkbox for each section after you have successfully completed it.
 
+# Choose you dev Folder
+
+***NOTE: This requirnent is mandatory. Please change the placeholder with your actual development folder path.***
+
+- for example: replace <your_dev_folder_full_path> to /Users/username/development
+- where `username` is your actual username.
+- - mkdir -p /Users/username/development
+
+```bash
+mkdir -p <your_dev_folder_full_path>
+```
+
 ### 1. Python
 
 Python and pip installed on your system (Python 3.10 or newer is recommended).
@@ -62,14 +74,45 @@ node --version
 git clone https://github.com/langware-labs/FlowPad.git
 ```
 
-### 5. Change directory to the Flowpad folder and list the contents
+### 5. Environment Variables
+
+In your terminal at the root of your local repository (cd into the cloned repository), run:
+
+```bash
+cp FlowPad/flowpad/hub/.env.local.local.example FlowPad/flowpad/hub/.env.local.local
+```
+
+Note: Use your `OPENAI_API_KEY` If you don't have an OpenAI API key, you can get one [here](https://platform.openai.com/account/api-keys).
+
+Now go to your `.env.local` file and fill in the values.
+
+## Configuration
+
+When deploying the application, the following environment variables can be set:
+- NOTE: Below are the necessary configuration settings for the project. All settings are required.
+
+| Setting                        | Description                                   | Required |
+|--------------------------------|-----------------------------------------------|----------|
+| `NEO4J_DATABASE_USERNAME`      | Your Neo4j database username.                 | Yes      |
+| `NEO4J_DATABASE_PASS`          | Your Neo4j database password.                 | Yes      |
+| `NEO4J_DATABASE_DB_NAME`       | Your Neo4j database name.                     | Yes      |
+| `NEO4J_DATABASE_HOST`          | Your Neo4j database host address.             | Yes      |
+| `NEO4J_DATABASE_PORT`          | Your Neo4j database port.                     | Yes      |
+| `CONNECTION_STR`               | Your PostgreSQL connection string.            | Yes      |
+| `OPENAI_API_KEY`               | Your OpenAI API key.                          | Yes      |
+
+Ensure you replace the placeholders with your actual configuration values before running the project.
+
+
+### 6. Change directory to the Flowpad folder and list the contents
 
 ```bash
 cd FlowPad
+python -m venv venv
 ls -la
 ```
 
-### 6. Install Dependencies
+### 7. Install Dependencies
 
 Install the necessary packages from the requirements.txt file:
 
@@ -86,7 +129,7 @@ npm install
 cd -
 ```
 
-### 7. Run Tests
+### 8. Run Tests
 
 To run the backend tests, execute:
 
@@ -103,7 +146,7 @@ cd Flowpad/flowpad/ui
 npm test
 ```
 
-### 8. Start Local App
+### 9. Start Local App
 
 To start the application locally, you may need to start both the backend and the frontend services. For the frontend,
 you can typically start it with:
