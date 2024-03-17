@@ -251,6 +251,13 @@ export OPENAI_API_KEY=<YOUR_OPEN_API_KEY>
 
 </details>
 
+## Create virtual environment
+
+```bash
+python -m venv venv
+source venv/bin/activate
+```
+
 ## Installation Steps
 
 1. **Install FlowPad**:
@@ -259,7 +266,7 @@ export OPENAI_API_KEY=<YOUR_OPEN_API_KEY>
    repository:
 
    ```bash
-   pip install git+https://github.com/flowpad.git#egg=flowpad    
+   pip install git+https://github.com/langware-labs/flowpad.git@v0.0.6#egg=flowpad        
    ```
 
    This command uses `pip` to install FlowPad using the Git protocol. It clones the repository and installs it as a

@@ -110,6 +110,7 @@ Ensure you replace the placeholders with your actual configuration values before
 ```bash
 cd FlowPad
 python -m venv venv
+source venv/bin/activate
 ls -la
 ```
 
