@@ -87,7 +87,7 @@ one [here](https://platform.openai.com/account/api-keys).
 
 Now go to your `.env.local` file and fill in the values.
 
-## Configuration
+**Configuration Table example**
 
 When deploying the application, the following environment variables can be set:
 
