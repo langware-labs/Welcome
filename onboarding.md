@@ -45,7 +45,7 @@ Python and pip installed on your system (Python 3.10 or newer is recommended).
 python --version
 ```
 
-### 2. Git
+### 2.1. Git
 
 If you haven't already, install Git. Git is required for cloning repositories and version control. Visit
 the [official Git website](https://git-scm.com/downloads) to download and install Git for Windows or macOS.
@@ -53,6 +53,21 @@ the [official Git website](https://git-scm.com/downloads) to download and instal
 
 ```bash
 git --version
+```
+
+### 2.2. GitHub CLI
+If you haven't already, install GitHub CLI tool. It streamlines the work with git. Visit
+their [official GitHub website](https://cli.github.com/) to download and install GitHub CLI for Windows or macOS.
+**NOTE: run the command below to check if GitHub CLI is installed on your system.**
+
+```bash
+gh --version
+```
+
+Once you have the GitHub CLI instaled, use it for authentication:
+
+```bash
+gh auth login
 ```
 
 ### 3. Node and NPM
