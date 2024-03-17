@@ -32,7 +32,7 @@ Please mark the checkbox for each section after you have successfully completed 
 
 - for example: replace <your_dev_folder_full_path> to /Users/username/development
 - where `username` is your actual username.
-- - mkdir -p /Users/username/development
+-  - mkdir -p /Users/username/development
 
 ```bash
 mkdir -p <your_dev_folder_full_path>
@@ -82,27 +82,28 @@ In your terminal at the root of your local repository (cd into the cloned reposi
 cp FlowPad/flowpad/hub/.env.local.local.example FlowPad/flowpad/hub/.env.local.local
 ```
 
-Note: Use your `OPENAI_API_KEY` If you don't have an OpenAI API key, you can get one [here](https://platform.openai.com/account/api-keys).
+Note: Use your `OPENAI_API_KEY` If you don't have an OpenAI API key, you can get
+one [here](https://platform.openai.com/account/api-keys).
 
 Now go to your `.env.local` file and fill in the values.
 
 ## Configuration
 
 When deploying the application, the following environment variables can be set:
+
 - NOTE: Below are the necessary configuration settings for the project. All settings are required.
 
-| Setting                        | Description                                   | Required |
-|--------------------------------|-----------------------------------------------|----------|
-| `NEO4J_DATABASE_USERNAME`      | Your Neo4j database username.                 | Yes      |
-| `NEO4J_DATABASE_PASS`          | Your Neo4j database password.                 | Yes      |
-| `NEO4J_DATABASE_DB_NAME`       | Your Neo4j database name.                     | Yes      |
-| `NEO4J_DATABASE_HOST`          | Your Neo4j database host address.             | Yes      |
-| `NEO4J_DATABASE_PORT`          | Your Neo4j database port.                     | Yes      |
-| `CONNECTION_STR`               | Your PostgreSQL connection string.            | Yes      |
-| `OPENAI_API_KEY`               | Your OpenAI API key.                          | Yes      |
+| Setting                   | Description                        | Required |
+|---------------------------|------------------------------------|----------|
+| `NEO4J_DATABASE_USERNAME` | Your Neo4j database username.      | Yes      |
+| `NEO4J_DATABASE_PASS`     | Your Neo4j database password.      | Yes      |
+| `NEO4J_DATABASE_DB_NAME`  | Your Neo4j database name.          | Yes      |
+| `NEO4J_DATABASE_HOST`     | Your Neo4j database host address.  | Yes      |
+| `NEO4J_DATABASE_PORT`     | Your Neo4j database port.          | Yes      |
+| `CONNECTION_STR`          | Your PostgreSQL connection string. | Yes      |
+| `OPENAI_API_KEY`          | Your OpenAI API key.               | Yes      |
 
 Ensure you replace the placeholders with your actual configuration values before running the project.
-
 
 ### 6. Change directory to the Flowpad folder and list the contents and create a virtual environment
 
@@ -184,14 +185,25 @@ Frontent is in /ui, backend is all the rest.
 
 ## Task 3: Automate Source Code Documentation
 
-Core part of Langware system is maintaining organization knowledge graph, a database which holds up to date company and product "truth", constantly and automatically maintaining it. we call this princple "0 cost of truth". Code changes are often representing the the ground truth, i.e. none debateable status of our products, apps and system. relflecting these changes back into our knowledge base (and hence to our arcitecture, documentation, communication) automatically is critical knowldge transfer which will allow non-technical members stay up to date.
-We would like to believe the future of just putting the entire codebase into a model and asking for architecture docs is not that far wawy as Gemini 1.5 pro already support 1M tokens, yet for now we would like to get such decription of flowpad, even if not complete. 
-The biggest challenge now is how to scan and gradually build the code documentaiton where we are likly to be limited by context window size. we are exepcted to endup with many pieces of code docs which will rise the question how good LLMs are in consolidating them all into one document with low effort.
-your task is to write a code in python, which is completely independent to flowpad and outputs documentaiton folder, to documentation is an architectualt documentation and should be friendly to joniors, product and program manager. The outpuy may containing one or mode md files and the activation function signature is:
+Core part of Langware system is maintaining organization knowledge graph, a database which holds up to date company and
+product "truth", constantly and automatically maintaining it. we call this princple "0 cost of truth". Code changes are
+often representing the ground truth, i.e. none debateable status of our products, apps and system. relflecting these
+changes back into our knowledge base (and hence to our arcitecture, documentation, communication) automatically is
+critical knowldge transfer which will allow non-technical members stay up to date.
+We would like to believe the future of just putting the entire codebase into a model and asking for architecture docs is
+not that far wawy as Gemini 1.5 pro already support 1M tokens, yet for now we would like to get such decription of
+flowpad, even if not complete.
+The biggest challenge now is how to scan and gradually build the code documentaiton where we are likly to be limited by
+context window size. we are exepcted to endup with many pieces of code docs which will rise the question how good LLMs
+are in consolidating them all into one document with low effort.
+your task is to write a code in python, which is completely independent to flowpad and outputs documentaiton folder, to
+documentation is an architectualt documentation and should be friendly to joniors, product and program manager. The
+outpuy may containing one or mode md files and the activation function signature is:
+
 ```python
-def gen_doc(repo_root_folder:str,outputfolder:str|None = None):
-  #if output folder is None place docs under docs subfolder of repo folder.
-  pass
+def gen_doc(repo_root_folder: str, outputfolder: str | None = None):
+    # if output folder is None place docs under docs subfolder of repo folder.
+    pass
 ```
 
 ---
