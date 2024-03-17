@@ -24,18 +24,6 @@ Let's kick things off by enhancing Flowpad with some powerful extensions! These 
 
 Dive in and let Flowpad transform your coding workflow into an adventure! 🌟
 
-# Choose you dev Folder
-
-***NOTE: This requirement is mandatory. Please replace the placeholder with your actual development folder path.***
-
-- for example: replace <your_dev_folder_full_path> to /Users/username/development
-- where `username` is your actual username.
--  - mkdir -p /Users/username/development
-
-```bash
-mkdir -p <your_dev_folder_full_path>
-```
-
 ### 1. Python
 
 Python and pip installed on your system (Python 3.10 or newer is recommended).
