@@ -104,7 +104,7 @@ When deploying the application, the following environment variables can be set:
 Ensure you replace the placeholders with your actual configuration values before running the project.
 
 
-### 6. Change directory to the Flowpad folder and list the contents
+### 6. Change directory to the Flowpad folder and list the contents and create a virtual environment
 
 ```bash
 cd FlowPad
