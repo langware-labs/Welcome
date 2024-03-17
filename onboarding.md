@@ -26,7 +26,7 @@ Dive in and let Flowpad transform your coding workflow into an adventure! 🌟
 
 # Choose you dev Folder
 
-***NOTE: This requirnent is mandatory. Please change the placeholder with your actual development folder path.***
+***NOTE: This requirement is mandatory. Please replace the placeholder with your actual development folder path.***
 
 - for example: replace <your_dev_folder_full_path> to /Users/username/development
 - where `username` is your actual username.
