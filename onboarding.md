@@ -52,9 +52,10 @@ their [official GitHub website](https://cli.github.com/) to download and install
 gh --version
 ```
 
-Once you have the GitHub CLI instaled, use it for authentication:
+Once you have the GitHub CLI instaled, use it for authentication.
+Open terminal and run the following command:
 
-```bash
+```
 gh auth login
 ```
 
