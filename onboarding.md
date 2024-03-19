@@ -36,7 +36,7 @@ python --version
 ### 2.1. Git
 
 If you haven't already, install Git. Git is required for cloning repositories and version control. Visit
-the [official Git website](https://git-scm.com/downloads) to download and install Git for Windows or macOS.
+the <a href="https://git-scm.com/downloads" target="_blank">official Git website</a> to download and install Git for Windows or macOS.
 **NOTE: run the command below to check if git is installed on your system.**
 
 ```bash
@@ -45,7 +45,7 @@ git --version
 
 ### 2.2. GitHub CLI
 If you haven't already, install GitHub CLI tool. It streamlines the work with git. Visit
-their [official GitHub website](https://cli.github.com/) to download and install GitHub CLI for Windows or macOS.
+their <a href="https://cli.github.com/" target="_blank">official GitHub website</a> to download and install GitHub CLI for Windows or macOS.
 **NOTE: run the command below to check if GitHub CLI is installed on your system.**
 
 ```bash
@@ -61,7 +61,7 @@ gh auth login
 
 ### 3. Node and NPM
 
-Node.js installed on your system.** You can download it from the [official Node.js website](https://nodejs.org/).
+Node.js installed on your system.** You can download it from the <a href="https://nodejs.org/" target="_blank">official Node.js website</a>
 Installing Node.js is crucial for FlowPad to run correctly.
 
 **NOTE: run the command below to check if Node.js is installed on your system.**
@@ -85,7 +85,7 @@ cp FlowPad/flowpad/hub/.env.local.example FlowPad/flowpad/hub/.env.local
 ```
 
 Note: Use your `OPENAI_API_KEY` If you don't have an OpenAI API key, you can get
-one [here](https://platform.openai.com/account/api-keys).
+one <a href="https://platform.openai.com/account/api-keys/" target="_blank">here</a>
 
 Now go to your `.env.local` file and fill in the values.
 
