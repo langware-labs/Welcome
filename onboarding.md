@@ -78,7 +78,7 @@ git clone https://github.com/langware-labs/FlowPad.git
 
 ### 5. Environment Variables
 
-In your terminal at the root of your local repository (cd into the cloned repository), run:
+To create a copy of the enviornment variables example, run:
 
 ```bash
 cp FlowPad/flowpad/hub/.env.local.example FlowPad/flowpad/hub/.env.local
@@ -102,7 +102,6 @@ When deploying the application, the following environment variables can be set:
 | `NEO4J_DATABASE_DB_NAME`  | Your Neo4j database name.          | Yes      |
 | `NEO4J_DATABASE_HOST`     | Your Neo4j database host address.  | Yes      |
 | `NEO4J_DATABASE_PORT`     | Your Neo4j database port.          | Yes      |
-| `CONNECTION_STR`          | Your PostgreSQL connection string. | Yes      |
 | `OPENAI_API_KEY`          | Your OpenAI API key.               | Yes      |
 | `DEVELOPMENT`             | `True` for dev.                    | Yes      |
 
